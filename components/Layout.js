@@ -12,15 +12,13 @@ export default function Layout({ children, pageTitle, description, ...props }) {
         <title>{pageTitle}</title>
       </Head>
       <style jsx global>{`
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
         html,
         body {
           margin: 0;
           padding: 0;
-          font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-            Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
-            sans-serif;
+          font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
           color: #445566;
         }
 
@@ -54,18 +52,13 @@ export default function Layout({ children, pageTitle, description, ...props }) {
           justify-content: center;
           align-items: center;
         }
-
-        footer img {
-          padding: 0 5px;
-          height: 1rem;
-        }
       `}</style>
       <section className="layout">
         <Header />
         <div className="content">{children}</div>
       </section>
       <footer>
-        Built with <img src="/netliheart.svg" alt="Netlify Heart" /> for you
+        Hobby Couple c 2020
       </footer>
     </>
   )
