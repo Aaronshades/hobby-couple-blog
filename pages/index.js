@@ -1,4 +1,4 @@
-import Layout from '@components/Layout'
+import Layout from '@components/Layout/Layout'
 import PostList from '@components/PostList'
 
 import getPosts from '@utils/getPosts'
