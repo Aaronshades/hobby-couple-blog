@@ -1,0 +1,28 @@
+
+.button {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    color: #fff;
+    background-image: none;
+    background-color: #41549A;
+    border: 1px solid transparent;
+  }
+  .button:hover,
+  .button:focus {
+    background-color: #617cdd;
+  }
+  .button:active {
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  }

@@ -7,14 +7,16 @@
     align-items: center;
 }
 nav {
-    width: calc(100% - 40px);
+    width: calc(100% - 32px);
     max-width: 1200px;
     font-weight: bold;
     font-size: 1.3rem;
+    display: flex;
+    justify-content: space-between;
 }
 nav a {
-    margin-right: 20px;
-    color: #00a395;
+    margin-right: 16px;
+    color: #000;
     text-decoration: none;
 }
 nav a:hover {

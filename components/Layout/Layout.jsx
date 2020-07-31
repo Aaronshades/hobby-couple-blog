@@ -15,10 +15,8 @@ export default function Layout({ children, pageTitle, description, ...props }) {
       <section className="layout">
         <Header />
         <div className={styles.content}>{children}</div>
+        <footer className={styles.footer}>Hobby Couple © {new Date().getFullYear()}</footer>
       </section>
-      <footer className={styles.footer}>
-        Hobby Couple c 2020
-      </footer>
     </>
-  )
+  );
 }

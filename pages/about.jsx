@@ -1,4 +1,4 @@
-import Layout from '@components/Layout/Layout'
+import Layout from '@components/Layout/Layout';
 
 const About = ({ title, description, ...props }) => {
   return (
@@ -8,18 +8,18 @@ const About = ({ title, description, ...props }) => {
         <p>This is going to be the about us page.</p>
       </Layout>
     </>
-  )
-}
+  );
+};
 
-export default About
+export default About;
 
 export async function getStaticProps() {
-  const configData = await import(`../siteconfig.json`)
+  const configData = await import(`../siteconfig.json`);
 
   return {
     props: {
       title: configData.default.title,
       description: configData.default.description,
     },
-  }
+  };
 }

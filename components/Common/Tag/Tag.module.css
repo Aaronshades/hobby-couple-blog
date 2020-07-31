@@ -1,0 +1,26 @@
+.tag {
+    height: 40px;
+    padding: 8px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: #fff;
+}
+.tag p {
+    margin: 0;
+    padding: 0;
+    line-height: 24px;
+}
+.knitting {
+    composes: tag;
+    background-color: #6F4B9D;
+}
+.painting {
+    composes: tag;
+    background-color: #931111;
+}
+.blog {
+    composes: tag;
+    background-color: #699D6F;
+}

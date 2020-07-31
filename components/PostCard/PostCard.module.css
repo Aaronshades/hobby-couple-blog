@@ -1,0 +1,47 @@
+
+.post {
+    width: 400px;
+    height: 200px;
+    box-shadow: 0px 0px 6px #bbb;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 1rem;
+    color: #000;
+}
+@media screen and (max-width: 600px) {
+    .post {
+        width: 320px;
+    }
+}
+.knitting {
+    composes: post;
+    background-color: #D1C4F6;
+}
+.painting {
+    composes: post;
+    background-color: #DD9F9F;
+}
+.blog {
+    composes: post;
+    background-color: #DEEEE1;
+}
+.cardHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+    margin: 0.5rem 0;
+    text-decoration: none;
+}
+.postBottomContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
