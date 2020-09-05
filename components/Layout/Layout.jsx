@@ -2,8 +2,9 @@ import Head from 'next/head';
 
 import Header from '../Header/Header';
 import styles from './Layout.module.css';
+import Footer from '@components/Footer/Footer';
 
-export default function Layout({ children, pageTitle, description, ...props }) {
+const Layout = ({ children, pageTitle, description, ...props }) => {
   return (
     <>
       <Head>
@@ -12,11 +13,13 @@ export default function Layout({ children, pageTitle, description, ...props }) {
         <meta name="Description" content={description}></meta>
         <title>{pageTitle}</title>
       </Head>
-      <section className="layout">
+      <div className="layout">
         <Header />
         <div className={styles.content}>{children}</div>
-        <footer className={styles.footer}>Hobby Couple © {new Date().getFullYear()}</footer>
-      </section>
+        <Footer />
+      </div>
     </>
   );
-}
+};
+
+export default Layout;
