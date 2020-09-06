@@ -30,13 +30,13 @@ a {
 .content {
     display: flex;
     flex-direction: column;
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
     min-height: calc(100vh - 200px);
 }
 
 @media screen and (max-width: 600px) {
     .content {
-        margin-top: 0;
+        margin: 1rem;
     }
 }

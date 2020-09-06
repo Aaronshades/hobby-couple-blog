@@ -47,7 +47,7 @@ export async function getStaticProps({ ...ctx }) {
   const content = await import(`../../posts/${postname}.md`);
   const config = await import(`../../siteconfig.json`);
   const data = matter(content.default);
-
+console.log("DATA?", data);
   return {
     props: {
       siteTitle: config.title,
