@@ -27,6 +27,12 @@ const Tag = ({ tag, tagType }) => {
           <p>{`#${tag}`}</p>
         </div>
       );
+    case 'photography':
+      return (
+        <div className={styles.photography}>
+          <p>{`#${tag}`}</p>
+        </div>
+      );
     default:
       return null;
   }

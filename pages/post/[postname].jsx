@@ -3,11 +3,17 @@ import matter from 'gray-matter';
 import ReactMarkdown from 'react-markdown';
 
 import Layout from '@components/Layout/Layout';
+import Tag from '@components/Common/Tag/Tag';
+import Image from '@components/Common/Image/Image';
 import getSlugs from '@utils/getSlugs';
 import styles from './post.module.css';
-import Tag from '@components/Common/Tag/Tag';
 
 export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
+
+  const renderers = {
+    image: Image
+  };
+
   if (!frontmatter) return <></>;
   return (
     <>
@@ -27,7 +33,7 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
             <img src={frontmatter.hero_image} className={styles.hero} alt={frontmatter.title} />
           )}
           <>
-            <ReactMarkdown source={markdownBody} />
+            <ReactMarkdown renderers={renderers} source={markdownBody} />
           </>
           <div className={styles.back}>
             ←{' '}
@@ -47,7 +53,6 @@ export async function getStaticProps({ ...ctx }) {
   const content = await import(`../../posts/${postname}.md`);
   const config = await import(`../../siteconfig.json`);
   const data = matter(content.default);
-console.log("DATA?", data);
   return {
     props: {
       siteTitle: config.title,

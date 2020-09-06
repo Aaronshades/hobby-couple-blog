@@ -10,9 +10,9 @@ export default function Header() {
           <Link href="/">
             <a>Hobby Couple</a>
           </Link>
-          <Link href="/about">
+{/*           <Link href="/about">
             <a>About</a>
-          </Link>
+          </Link> */}
         </nav>
       </header>
     </>

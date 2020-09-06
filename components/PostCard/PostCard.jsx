@@ -112,7 +112,7 @@ const PostCard = ({ post }) => {
       );
     case 'sewing':
       return (
-        <div className={styles.blog}>
+        <div className={styles.sewing}>
           <div>
             <div className={styles.cardHeader}>
               <h3 className={styles.title}>{post?.frontmatter?.title}</h3>
@@ -141,6 +141,32 @@ const PostCard = ({ post }) => {
                   fill="#9266CC"
                   d="M17.261 7H7.739C7.332 7 7 6.668 7 6.261v-.522C7 5.332 7.332 5 7.739 5h9.523c.406 0 .738.332.738.739v.523c0 .406-.332.738-.739.738zm0 4H7.739C7.332 11 7 10.668 7 10.261v-.522C7 9.332 7.332 9 7.739 9h9.523c.406 0 .738.332.738.739v.523c0 .406-.332.738-.739.738zm0 4H7.739C7.332 15 7 14.668 7 14.261v-.523c0-.406.332-.738.739-.738h9.523c.406 0 .738.332.738.739v.523c0 .406-.332.738-.739.738zm0 4H7.739C7.332 19 7 18.668 7 18.261v-.523c0-.406.332-.738.739-.738h9.523c.406 0 .738.332.738.739v.523c0 .406-.332.738-.739.738zm0 4H7.739C7.332 23 7 22.668 7 22.261v-.523c0-.406.332-.738.739-.738h9.523c.406 0 .738.332.738.739v.523c0 .406-.332.738-.739.738zm0 4H7.739C7.332 27 7 26.668 7 26.261v-.523c0-.406.332-.738.739-.738h9.523c.406 0 .738.332.738.739v.523c0 .406-.332.738-.739.738zm0 4H7.739C7.332 31 7 30.668 7 30.261v-.523c0-.406.332-.738.739-.738h9.523c.406 0 .738.332.738.739v.523c0 .406-.332.738-.739.738z"
                 />
+              </svg>
+            </div>
+            {`Created: ${post.frontmatter.date}`}
+          </div>
+          <div className={styles.postBottomContainer}>
+            <div className={styles.buttonContainer}>
+              <Link href={{ pathname: `/post/${post.slug}` }}>
+                <Button label="Read more" />
+              </Link>
+            </div>
+            <Tag tag={post?.frontmatter.tag} tagType={post?.frontmatter.tag} />
+          </div>
+        </div>
+      );
+    case 'photography':
+      return (
+        <div className={styles.photography}>
+          <div>
+            <div className={styles.cardHeader}>
+              <h3 className={styles.title}>{post?.frontmatter?.title}</h3>
+              <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="camera" role="img" xmlns="http://www.w3.org/2000/svg" style={{ alignSelf: 'center' }}
+                width="24"
+                height="28"
+                viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M512 144v288c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V144c0-26.5 21.5-48 48-48h88l12.3-32.9c7-18.7 24.9-31.1 44.9-31.1h125.5c20 0 37.9 12.4 44.9 31.1L376 96h88c26.5 0 48 21.5 48 48zM376 288c0-66.2-53.8-120-120-120s-120 53.8-120 120 53.8 120 120 120 120-53.8 120-120zm-32 0c0 48.5-39.5 88-88 88s-88-39.5-88-88 39.5-88 88-88 88 39.5 88 88z">
+                  </path>
               </svg>
             </div>
             {`Created: ${post.frontmatter.date}`}

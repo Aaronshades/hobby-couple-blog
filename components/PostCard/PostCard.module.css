@@ -28,6 +28,14 @@
     composes: post;
     background-color: #DEEEE1;
 }
+.sewing {
+    composes: post;
+    background-color: #728da7;
+}
+.photography {
+    composes: post;
+    background-color: #7f8c9b;
+}
 .cardHeader {
     display: flex;
     flex-direction: row;
