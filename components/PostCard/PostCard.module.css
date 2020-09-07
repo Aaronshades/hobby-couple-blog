@@ -8,12 +8,13 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 1rem;
-    margin: 1rem;
+    margin: 1rem 1rem 0 0 ;
     color: #000;
 }
 @media screen and (max-width: 600px) {
     .post {
-        width: 320px;
+        width: 100%;
+        margin: 0.5rem 0;
     }
 }
 .knitting {
