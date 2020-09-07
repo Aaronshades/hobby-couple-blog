@@ -3,15 +3,15 @@
 *,
 *::after,
 *::before {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    color: #445566;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #445566;
 }
 h1,
 h2,
@@ -19,22 +19,22 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: bold;
+  font-weight: bold;
 }
 a {
-    color: #143dad;
+  color: #143dad;
 }
 .content {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    max-width: 1200px;
-    margin: 1rem auto;
-    min-height: calc(100vh - 200px);
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  max-width: 1200px;
+  margin: 1rem auto;
+  min-height: calc(100vh - 200px);
 }
 @media screen and (max-width: 600px) {
-    .content {
-        padding: 1rem;
-        width: 100%;
-    }
+  .content {
+    padding: 1rem;
+    width: 100%;
+  }
 }

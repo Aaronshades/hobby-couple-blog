@@ -9,9 +9,8 @@ import getSlugs from '@utils/getSlugs';
 import styles from './post.module.css';
 
 export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
-
   const renderers = {
-    image: Image
+    image: Image,
   };
 
   if (!frontmatter) return <></>;
