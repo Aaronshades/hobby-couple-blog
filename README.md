@@ -1,16 +1,7 @@
 # Hobby Couple Blog
 
-## Hero images
+## A site to show our hobbies
 
-You may include an optional hero image in your posts. Put the images in `public/static/`, and then include in your blog .md file like so:
+This project is a fun way for us to show our hobbies to the world. We will be posting guides, images, videos and other small snippets of what we like to in our free time.
 
-```
----
-title: 'Post title'
-author: 'Post author'
-date: '2020-04-27'
-hero_image: ../static/example.jpg
----
-```
-
-See `demo-post-1.md` for an example of this.
+Hobby Couple © 2020
