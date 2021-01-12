@@ -9,9 +9,9 @@
     "export": "next export"
   },
   "dependencies": {
-    "eslint": "^7.15.0",
+    "eslint": "^7.17.0",
     "gray-matter": "^4.0.2",
-    "next": "^10.0.3",
+    "next": "^10.0.5",
     "prettier": "^2.2.1",
     "raw-loader": "^4.0.2",
     "react": "^17.0.1",
@@ -19,7 +19,7 @@
     "react-markdown": "^5.0.3"
   },
   "devDependencies": {
-    "eslint-config-prettier": "^7.0.0",
-    "eslint-plugin-prettier": "^3.2.0"
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-prettier": "^3.3.1"
   }
 }
