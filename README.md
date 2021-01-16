@@ -4,4 +4,4 @@
 
 This project is a fun way for us to show our hobbies to the world. We will be posting guides, images, videos and other small snippets of what we like to in our free time.
 
-Hobby Couple © 2020
+Hobby Couple © 2021

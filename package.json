@@ -9,7 +9,6 @@
     "export": "next export"
   },
   "dependencies": {
-    "eslint": "^7.17.0",
     "gray-matter": "^4.0.2",
     "next": "^10.0.5",
     "prettier": "^2.2.1",
